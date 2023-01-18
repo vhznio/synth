@@ -1,0 +1,185 @@
+
+body, html{
+    margin: 0;
+    height: 100%; 
+    background-color: black;
+    overflow: hidden;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    border: 1px solid rgba(0,255,0);
+}
+
+.synth {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 95%;
+    margin:auto;
+    margin-top: 1%;
+    border: 1px solid rgba(0,255,0);
+    border-radius: 25px;
+}
+
+.editor_container {
+    position: relative;
+    display: flex;
+    width: 48%;
+    height: 45%;
+    margin: auto;
+    border: 1px solid rgba(0,255,0);
+    border-radius: 15px;
+    text-align: center;
+}
+
+#editor { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+.analyser {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 48%;
+    height: 45%;
+    margin: auto;
+    border: 1px solid rgba(0,255,0);
+    border-radius: 25px;
+}
+
+.graph_filter {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 12%;
+    height: 90%;
+    margin: auto;
+}
+
+.freq_filter {
+    width: 100%;
+    min-width: 15px;
+    border-radius: 15px; 
+    margin: 5px;
+    border: 1px solid rgba(0,255,0);
+}
+
+.freq_filter:hover {
+    width: 100%;
+    margin: 5px;
+    border-radius: 15px; 
+    border: 1px solid rgba(0,255,0);
+    background-color: rgba(0,255,0,0.5);
+}
+
+.graph_plot {
+    min-width: 80%;
+    margin: 10px;
+}
+
+
+.files {
+    position: relative;
+    display:table-cell;
+    width: 48%;
+    height: 10%;
+    margin: auto;
+    border: 1px solid rgba(0,255,0);
+    border-radius: 25px;
+}
+
+.sequencer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
+    height: 10%;
+    margin: auto;
+    border: 1px solid rgba(0,255,0);
+    border-radius: 25px;
+}
+
+.steps {
+    flex: 1 0 calc(100% / 16);
+    min-width: 5px;
+    max-height: 15px;
+    border-radius: 100%;
+    background-color:black;
+}
+
+.steps:hover {
+    flex: 1 0 calc(100% / 16);
+    min-width: 5px;
+    max-height: 15px;
+    border-radius: 100%;
+    background-color: rgba(0,255,0,0.5);
+}
+
+.keyboard {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 98%;
+    height: 25%;
+    margin: auto;
+    border: 1px solid rgba(0,255,0);
+    border-radius: 25px;
+}
+
+
+button {
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-end;
+	margin: 10px;
+    padding:20px;
+	border: 1px solid rgba(0,255,0);
+}
+
+.white_key {
+    flex: 1 0 calc(100% / 24);
+    height: 90%;
+    border-radius: 15px;
+    background-color: rgba(0,100,0,0.2);
+}
+
+.white_key:hover {
+    flex: 1 0 calc(100% / 24);
+    height: 90%;
+    border-radius: 15px;
+    background-color: rgba(0,255,0,0.5);
+}
+
+.black_key{
+    margin-left: calc(100% / 24 * -0.5 - 4px);
+	margin-right: calc(100% / 24 * -0.5 - 4px);
+    height: 60%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    z-index: 1;
+    background-color: black;
+    border: 1px solid rgba(0,255,0,0.3);
+}
+
+.black_key:hover{
+    margin-left: calc(100% / 24 * -0.5 - 4px);
+	margin-right: calc(100% / 24 * -0.5 - 4px);
+    height: 60%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    z-index: 1;
+    background-color: rgba(0,150,0);
+    border: 1px solid rgba(0,255,0,0.5);
+}
+

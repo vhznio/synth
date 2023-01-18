@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neoSynth</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+    <section class="synth">
+        <div class="editor_container">			
+			<div id="editor"></div>
+		</div>
+        <div class="analyser">
+            <div class="graph_filter">
+                <div class="freq_filter"></div>
+                <div class="freq_filter"></div>
+                <div class="freq_filter"></div>
+            </div>
+            <div class="graph_plot"></div>
+        </div>
+        <div class="files"></div>
+        <div class="sequencer">
+            <button class="steps">1</button>
+            <button class="steps">2</button>
+            <button class="steps">3</button>
+            <button class="steps">4</button>
+            <button class="steps">5</button>
+            <button class="steps">6</button>
+            <button class="steps">7</button>
+            <button class="steps">8</button>
+        </div>
+        <div class="keyboard">
+            <button class="white_key" data-note="c" label="C">
+				<key>C</key>
+			</button>
+			<button class="black_key" data-note="cs" label="C sharp">
+				<key>C#</key>
+			</button>
+            <button class="white_key" data-note="c" label="C">
+				<key>D</key>
+			</button>
+			<button class="black_key" data-note="cs" label="C sharp">
+				<key>D#</key>
+			</button>
+            <button class="white_key" data-note="c" label="C">
+				<key>E</key>
+			</button>
+            <button class="white_key" data-note="c" label="C">
+				<key>F</key>
+			</button>
+			<button class="black_key" data-note="cs" label="C sharp">
+				<key>F#</key>
+			</button>
+            <button class="white_key" data-note="c" label="C">
+				<key>G</key>
+			</button>
+			<button class="black_key" data-note="cs" label="C sharp">
+				<key>G#</key>
+			</button>
+            <button class="white_key" data-note="c" label="C">
+				<key>A</key>
+			</button>
+			<button class="black_key" data-note="cs" label="C sharp">
+				<key>A#</key>
+			</button>
+            <button class="white_key" data-note="c" label="C">
+				<key>B</key>
+			</button>
+            <button class="white_key" data-note="c" label="C">
+				<key>C</key>
+			</button>
+			<button class="black_key" data-note="cs" label="C sharp">
+				<key>C#</key>
+			</button>
+            <button class="white_key" data-note="c" label="C">
+				<key>D</key>
+			</button>
+			<button class="black_key" data-note="cs" label="C sharp">
+				<key>D#</key>
+			</button>
+            <button class="white_key" data-note="c" label="C">
+				<key>E</key>
+			</button>
+            <button class="white_key" data-note="c" label="C">
+				<key>F</key>
+			</button>
+			<button class="black_key" data-note="cs" label="C sharp">
+				<key>F#</key>
+			</button>
+            <button class="white_key" data-note="c" label="C">
+				<key>G</key>
+			</button>
+			<button class="black_key" data-note="cs" label="C sharp">
+				<key>G#</key>
+			</button>
+            <button class="white_key" data-note="c" label="C">
+				<key>A</key>
+			</button>
+			<button class="black_key" data-note="cs" label="C sharp">
+				<key>A#</key>
+			</button>
+            <button class="white_key" data-note="c" label="C">
+				<key>B</key>
+			</button>
+        </div>
+    </section>
+
+	<script src="graph.js"></script>
+    <script src="engine.js"></script>
+	<script src="src-noconflict/ace.js"></script>
+	<script src="editor_.js"></script>
+</body>
+</html>
